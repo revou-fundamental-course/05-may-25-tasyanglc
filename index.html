@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web title -->
     <title>Tastetoria</title>
 
     <!-- external css -->
@@ -12,6 +13,226 @@
     <script href="js\script.js"></script>
 </head>
 <body>
-    
+    <!-- main header -->
+    <header class="main-header">
+        <div class="container">
+            <!-- logo -->
+            <img id="logo" src="assets\logo yellow.svg" alt="Company Logo">
+
+            <!-- navigation bar -->
+            <nav class="navigation-button">
+                <a href="#" id="navigation-button">HOME</a>
+                <a href="#" id="navigation-button">OUR PACKAGES</a>
+                <a href="#" id="navigation-button">CALL US</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <!-- banner section -->
+        <section>
+            <header>
+                <!-- tagline -->
+                <h1 class="tagline" id="tagline-head">Welcome to Tastetoria</h1>
+                <h4 class="tagline" id="tagline-caption" style="font-weight: 400;">Mau masak apa hari ini? Temukan inspirasi di sini.</h4>
+
+                <!-- banner and form -->
+                <div class="banner-form">
+                    <!-- banner and feature -->
+                    <div class="left-side">
+                        <!-- slideshow image (1) -->
+                        <div class="first-slide">
+                            <!-- banner image -->
+                            <img id="image-slideshow" src="assets\1.svg" alt="Opor">
+                            <!-- caption -->
+                            <p id="caption-slideshow">"Rasa opornya... Jadi kangen masakan ibu."</p>
+                            <!-- profile -->
+                            <div class="profile">
+                                <img id="profile-slideshow" src="assets\user.png" alt="Profile">
+                                <div class="user-profile">
+                                    <h5 id="user-name">Resep Rumahan</h5>
+                                    <p id="user-profecy">Ibu rumah tangga</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slideshow image (2) -->
+                        <div class="second-slide">
+                            <!-- banner image -->
+                            <img id="image-slideshow" src="assets\2.svg" alt="Onion rings">
+                            <p id="caption-slideshow">"Onion rings yang gurih dan renyah, wajib jadi temen nonton kamu!"</p>
+
+                            <div class="profile">
+                                <img id="profile-slideshow" src="assets\user.png" alt="Profile">
+                                <div class="user-profile">
+                                    <h5 id="user-name">Candy</h5>
+                                    <p id="user-profecy">Mahasiswa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slideshow image (3) -->
+                        <div class="third-slide">
+                            <!-- banner image -->
+                            <img id="image-slideshow" src="assets\3.svg" alt="Bento">
+                            <p id="caption-slideshow">"Kreasikan bekal Si Kecil, temani kesehariannya."</p>
+
+                            <div class="profile">
+                                <img id="profile-slideshow" src="assets\user.png" alt="Profile">
+                                <div class="user-profile">
+                                    <h5 id="user-name">MamaMia</h5>
+                                    <p id="user-profecy">Ibu rumah tangga</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="feature-list">
+                            <h3>
+                                Tastetoria menyajikan berbagai resep masakan dari para kontributor pilihan. 
+                                Semua resep telah dikurasi agar mudah diikuti, menginpirasi, dan menyesuaikan 
+                                kebutuhan dapurmu.
+                            </h3>
+                            
+                            <ol>
+                                <li>
+                                    <h4>Resep berkualitas dan kolaborator terpercaya</h4>
+                                    <p>
+                                        Tersedia resep dalam bentuk artikel dan video dari kontributor resmi 
+                                        yang bergabung dengan Tastetoria.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>Jelajahi beragam kategori kuliner</h4>
+                                    <p>
+                                        Mulai dari makanan tradisional Indonesia, makanan terkenal dari mancanegara, 
+                                        hingga camilan kekinian — semua bisa kamu temukan dengan mudah.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>Temukan inspirasi dapurmu hari ini</h4>
+                                    <p>
+                                        Lihat resep yang sedang viral, paling banyak dicari, dan penilaian tinggi 
+                                        untuk jadi inspirasi memasakmu hari ini.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- contact us form -->
+                    <div class="right-side">
+                        <h3 id="form-title">Contact Us</h3>
+                        <p id="form-description">
+                            Sales akan menghubungi Anda dalam
+                            <br>
+                            24 jam setelah data kami terima.
+                        </p>
+                        <!-- name input -->
+                        <label for="name">Your Name :</label>
+                        <input id="name" type="text">
+                        <!-- email input -->
+                        <label for="email">Email Address :</label>
+                        <input id="email" type="email">
+                        <!-- long text input -->
+                        <label for="option">What are you interested in?</label>
+                        <input type="text" name="" id="">
+                        <!-- send button -->
+                        <input type="submit" value="SEND" id="submit">
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <!-- our packages content -->
+        <section>
+            <h1 id="section-title">Our Packages</h1>
+
+            <div class="packages-card">
+                <div class="card">
+                    <div>
+                        <img src="assets\recipe-book (1).png" alt="">
+                    </div>
+                    <div>
+                        <h4>Resep yang Lengkap</h4>
+                        <p>Semua jenis makanan ada. Mulai dari masakan rumahan hingga yang lagi trending. Tinggal pilih sesuai kebutuhan dapurmu.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="assets\content-creation (1).png" alt="">
+                    </div>
+                    <div>
+                        <h4>Artikel Resep dan Video Memasak</h4>
+                        <p>Mau baca resep atau lihat cara masaknya langsung? Pilih aja sesuai keinginanmu.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="assets\community.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Jadi Kontributor</h4>
+                        <p>Punya resep unik? Atau mau berbagi resep warisan keluarga? Bagikan pengalaman memasakmu di sini.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="packages-card">
+                <div class="card">
+                    <div>
+                        <img src="assets\rating.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Rating dan Review</h4>
+                        <p>Sudah coba recook? Kasih dukungan buat kontributor favoritmu! Penilaianmu juga bantu pengguna lain menemukan resep terbaik.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="assets\refresh.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Update Tiap Minggu</h4>
+                        <p>Resep baru ditambahkan setiap minggu. Langganan newsletter Tastetoria biar kamu nggak ketinggalan update terbaru.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="assets\man.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Event Kolaborasi</h4>
+                        <p>Kolaborasi seru bareng kontributor dan brand pilihan! Ikuti tantangan resep atau campaign spesial dan tunjukkan kreasi dapur versimu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- call us content -->
+        <section class="cta">
+            <h1 id="headline-cta">Saatnya bagikan cerita dapurmu</h1>
+            <p id="caption-cta">Kami percaya setiap resep punya cerita. Bagikan momen kehangatan di hidupmu dengan bergabung bersama kami.</p>
+
+            <button class="cta-button">Join Our Community</button>
+            <p>ATAU</p>
+            <button class="alternate-button">Cari inspirasimu</button>
+        </section>
+    </main>
+
+    <hr />
+
+    <!-- footer -->
+    <footer>
+
+    </footer>
 </body>
 </html>
