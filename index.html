@@ -8,9 +8,6 @@
 
     <!-- external css -->
     <link rel="stylesheet" href="css\style.css">
-
-    <!-- external javascript -->
-    <script href="js\script.js"></script>
 </head>
 <body>
     <!-- main header -->
@@ -21,9 +18,9 @@
 
             <!-- navigation bar -->
             <nav class="navigation-button">
-                <a href="#" id="navigation-button">HOME</a>
-                <a href="#" id="navigation-button">OUR PACKAGES</a>
-                <a href="#" id="navigation-button">CALL US</a>
+                <a href="#home" id="navigation-button">HOME</a>
+                <a href="#our-packages" id="navigation-button">OUR PACKAGES</a>
+                <a href="#cta" id="navigation-button">CALL US</a>
             </nav>
         </div>
     </header>
@@ -31,7 +28,7 @@
     <!-- main content -->
     <main>
         <!-- banner section -->
-        <section>
+        <section id="home">
             <header>
                 <!-- tagline -->
                 <h1 class="tagline" id="tagline-head">Welcome to Tastetoria</h1>
@@ -41,48 +38,51 @@
                 <div class="banner-form">
                     <!-- banner and feature -->
                     <div class="left-side">
-                        <!-- slideshow image (1) -->
-                        <div class="first-slide">
-                            <!-- banner image -->
-                            <img id="image-slideshow" src="assets\1.svg" alt="Opor">
-                            <!-- caption -->
-                            <p id="caption-slideshow">"Rasa opornya... Jadi kangen masakan ibu."</p>
-                            <!-- profile -->
-                            <div class="profile">
-                                <img id="profile-slideshow" src="assets\user.png" alt="Profile">
-                                <div class="user-profile">
-                                    <h5 id="user-name">Resep Rumahan</h5>
-                                    <p id="user-profecy">Ibu rumah tangga</p>
+                        <!-- slideshow -->
+                        <div class="slideshow">
+                            <!-- slideshow image (1) -->
+                            <div class="container-slide">
+                                <!-- banner image -->
+                                <img id="image-slideshow" src="assets\1.svg" alt="Opor">
+                                <!-- caption -->
+                                <p id="caption-slideshow">"Rasa opornya... Jadi kangen masakan ibu."</p>
+                                <!-- profile -->
+                                <div class="profile">
+                                    <img id="profile-slideshow" src="assets\user.png" alt="Profile">
+                                    <div class="user-profile">
+                                        <h5 id="user-name">Resep Rumahan</h5>
+                                        <p id="user-profecy">Ibu rumah tangga</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- slideshow image (2) -->
-                        <div class="second-slide">
-                            <!-- banner image -->
-                            <img id="image-slideshow" src="assets\2.svg" alt="Onion rings">
-                            <p id="caption-slideshow">"Onion rings yang gurih dan renyah, wajib jadi temen nonton kamu!"</p>
+                            <!-- slideshow image (2) -->
+                            <div class="container-slide">
+                                <!-- banner image -->
+                                <img id="image-slideshow" src="assets\2.svg" alt="Onion rings">
+                                <p id="caption-slideshow">"Onion rings yang gurih dan renyah, wajib jadi temen nonton kamu!"</p>
 
-                            <div class="profile">
-                                <img id="profile-slideshow" src="assets\user.png" alt="Profile">
-                                <div class="user-profile">
-                                    <h5 id="user-name">Candy</h5>
-                                    <p id="user-profecy">Mahasiswa</p>
+                                <div class="profile">
+                                    <img id="profile-slideshow" src="assets\user.png" alt="Profile">
+                                    <div class="user-profile">
+                                        <h5 id="user-name">Candy</h5>
+                                        <p id="user-profecy">Mahasiswa</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- slideshow image (3) -->
-                        <div class="third-slide">
-                            <!-- banner image -->
-                            <img id="image-slideshow" src="assets\3.svg" alt="Bento">
-                            <p id="caption-slideshow">"Kreasikan bekal Si Kecil, temani kesehariannya."</p>
+                            <!-- slideshow image (3) -->
+                            <div class="container-slide">
+                                <!-- banner image -->
+                                <img id="image-slideshow" src="assets\3.svg" alt="Bento">
+                                <p id="caption-slideshow">"Kreasikan bekal Si Kecil, temani kesehariannya."</p>
 
-                            <div class="profile">
-                                <img id="profile-slideshow" src="assets\user.png" alt="Profile">
-                                <div class="user-profile">
-                                    <h5 id="user-name">MamaMia</h5>
-                                    <p id="user-profecy">Ibu rumah tangga</p>
+                                <div class="profile">
+                                    <img id="profile-slideshow" src="assets\user.png" alt="Profile">
+                                    <div class="user-profile">
+                                        <h5 id="user-name">MamaMia</h5>
+                                        <p id="user-profecy">Ibu rumah tangga</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -90,11 +90,11 @@
                         <hr />
 
                         <div class="feature-list">
-                            <h3>
+                            <h4>
                                 Tastetoria menyajikan berbagai resep masakan dari para kontributor pilihan. 
                                 Semua resep telah dikurasi agar mudah diikuti, menginpirasi, dan menyesuaikan 
                                 kebutuhan dapurmu.
-                            </h3>
+                            </h4>
                             
                             <ol>
                                 <li>
@@ -124,30 +124,40 @@
 
                     <!-- contact us form -->
                     <div class="right-side">
-                        <h3 id="form-title">Contact Us</h3>
-                        <p id="form-description">
-                            Sales akan menghubungi Anda dalam
-                            <br>
-                            24 jam setelah data kami terima.
-                        </p>
-                        <!-- name input -->
-                        <label for="name">Your Name :</label>
-                        <input id="name" type="text">
-                        <!-- email input -->
-                        <label for="email">Email Address :</label>
-                        <input id="email" type="email">
-                        <!-- long text input -->
-                        <label for="option">What are you interested in?</label>
-                        <input type="text" name="" id="">
-                        <!-- send button -->
-                        <input type="submit" value="SEND" id="submit">
+                        <div class="form-input">
+                            <h3 id="form-title">Contact Us</h3>
+                            <p id="form-description">
+                                Sales akan menghubungi Anda dalam 
+                                24 jam setelah data kami terima.
+                            </p>
+                            <!-- name input -->
+                            <label for="name">Your Name :</label>
+                            <input id="name" type="text" placeholder="Full name">
+                            <!-- email input -->
+                            <label for="email">Email Address :</label>
+                            <input id="email" type="email" placeholder="example@email.com">
+                            <!-- long text input -->
+                            <label for="option">What are you interested in?</label>
+                            <select id="option" name="option">
+                                <option value="" disabled selected hidden>Select an option</option>
+                                <option value="join">Join Our Community</option>
+                                <option value="brand-collab">Brand Collaboration</option>
+                                <option value="sponsorship">Event Sponsorship</option>
+                                <option value="investment">Investment</option>
+                            </select>
+                            <!-- send button -->
+                            <input type="submit" value="SEND" id="submit">
+                        </div>
+                        <div class="form-respons">
+
+                        </div>
                     </div>
                 </div>
             </header>
         </section>
 
         <!-- our packages content -->
-        <section>
+        <section id="our-packages">
             <h1 id="section-title">Our Packages</h1>
 
             <div class="packages-card">
@@ -218,21 +228,24 @@
         <hr />
 
         <!-- call us content -->
-        <section class="cta">
+        <section id="cta">
             <h1 id="headline-cta">Saatnya bagikan cerita dapurmu</h1>
-            <p id="caption-cta">Kami percaya setiap resep punya cerita. Bagikan momen kehangatan di hidupmu dengan bergabung bersama kami.</p>
+            <p id="caption-cta">Kami percaya setiap rasa punya cerita. Bagikan momen kehangatan di hidupmu dengan bergabung bersama kami.</p>
 
-            <button class="cta-button">Join Our Community</button>
-            <p>ATAU</p>
-            <button class="alternate-button">Cari inspirasimu</button>
+            <button class="cta-button">JOIN OUR COMMUNITY</button>
+            <p id="caption-cta">ATAU</p>
+            <button class="alternate-button">CARI INSPIRASIMU</button>
         </section>
     </main>
 
-    <hr />
-
     <!-- footer -->
     <footer>
-
+        <img id="logo" src="assets\logo yellow.svg" alt="">
+        <p>Terms of Service    |    Privacy Policy</p>
+        <p style="margin: 0px; padding: 0px;">&copy; 2025    |   tasyanglc</p>
     </footer>
+
+    <!-- external javascript -->
+    <script src="js\script.js"></script>
 </body>
 </html>
