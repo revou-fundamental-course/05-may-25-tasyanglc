@@ -130,23 +130,29 @@
                                 Sales akan menghubungi Anda dalam 
                                 24 jam setelah data kami terima.
                             </p>
-                            <!-- name input -->
-                            <label for="name">Your Name :</label>
-                            <input id="name" type="text" placeholder="Full name">
-                            <!-- email input -->
-                            <label for="email">Email Address :</label>
-                            <input id="email" type="email" placeholder="example@email.com">
-                            <!-- long text input -->
-                            <label for="option">What are you interested in?</label>
-                            <select id="option" name="option">
-                                <option value="" disabled selected hidden>Select an option</option>
-                                <option value="join">Join Our Community</option>
-                                <option value="brand-collab">Brand Collaboration</option>
-                                <option value="sponsorship">Event Sponsorship</option>
-                                <option value="investment">Investment</option>
-                            </select>
-                            <!-- send button -->
-                            <input type="submit" value="SEND" id="submit">
+                            <form action="">
+                                <!-- name input -->
+                                <label for="name">Your Name :</label>
+                                <input id="name" type="text" placeholder="Full name" required>
+                                <!-- email input -->
+                                 <br>
+                                <label for="email">Email Address :</label>
+                                <input id="email" type="email" placeholder="example@email.com" required>
+                                <!-- long text input -->
+                                 <br>
+                                <label for="option">What are you interested in?</label>
+                                <select id="option" name="option" required>
+                                    <option value="" disabled selected hidden>Select an option</option>
+                                    <option value="join">Join Our Community</option>
+                                    <option value="brand-collab">Brand Collaboration</option>
+                                    <option value="sponsorship">Event Sponsorship</option>
+                                    <option value="investment">Investment</option>
+                                </select>
+                                <!-- send button -->
+                                <!-- <input type="submit" value="SEND" id="submit"> -->
+                                <button type="submit">Submit</button>
+                            </form>
+                            
                         </div>
                         <div class="form-respons">
 

@@ -26,3 +26,4 @@ function showDivs(n) {
 setInterval(() => {
     nextDivs(1);
 }, 4000);
+
